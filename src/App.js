@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { connect } from "react-redux";
 import { simpleAction } from './actions/simpleAction';
@@ -10,14 +9,12 @@ const App = (props) => {
   }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        {/*<img src={logo} className="App-logo" alt="logo" />*/}
+        <span>
           Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <pre>{ JSON.stringify(props) }</pre>
+        </span>
+        {/*<pre>{ JSON.stringify(props) }</pre>*/}
         <button onClick={simpleAction}>Test redux action</button>
-      </header>
     </div>
   );
 }
